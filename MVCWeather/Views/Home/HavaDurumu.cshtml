@@ -1,0 +1,17 @@
+﻿@model MVCWeather.Models.FormModel
+
+
+@{
+    ViewBag.Title = "HavaDurumu";
+}
+
+<h2>FORECAST INFORMATION</h2>
+
+<form method="POST" asp-action="HavaDurumu" asp-controller="Form">
+    <label for="cityName">City</label>
+    <input type="text" id="cityName" placeholder="City name goes here" />
+    <input type="submit" />
+</form>
+ <h5>KAYSERİ</h5>
+<br />
+ <img src="@ViewBag.icon" width="25" title="@ViewBag.durum" /> @ViewBag.sicaklik
